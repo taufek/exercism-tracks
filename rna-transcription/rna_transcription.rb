@@ -11,6 +11,6 @@ module Complement
   def self.of_dna(values)
     values.split('').map do |value|
       DNA[value] || ''
-    end.join('')
+    end.join
   end
 end

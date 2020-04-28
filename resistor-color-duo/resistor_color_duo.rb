@@ -17,6 +17,6 @@ module ResistorColorDuo
   def self.value(colors)
     colors[0..1].map do |color|
       COLORS.index(color)
-    end.join('').to_i
+    end.join.to_i
   end
 end
