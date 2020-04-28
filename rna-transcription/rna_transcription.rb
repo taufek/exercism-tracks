@@ -9,8 +9,6 @@ module Complement
   }.freeze
 
   def self.of_dna(values)
-    values.split('').map do |value|
-      DNA[value] || ''
-    end.join
+    values.gsub(/[CGTA]/, DNA)
   end
 end
